@@ -1,5 +1,13 @@
 # Arduino Core for STM32L4 based boards
 
+This is a fork of the repository <https://github.com/GrumpyOldPizza/arduino-STM32L4> that adds support for a custom board based on the Butterfly design created by [FTC Team 11411 Cherry Pi](https://cherrypi.egoslike.us/). 
+
+The specific changes made include:
+* Add a custom board type and custom USB VID/PID
+* Some changes for I2C slave communication as during testing, we had trouble getting it to work with the existing code (the plan is to revisit this and see if it can be made to work without our specific changes)
+
+This code is to be used in conjunction with [OpticalFlowBoard](https://github.com/cherrypi11411/OpticalFlowBoard) project for the actual custom board layout as well as Arduino code for running on the microcontroller allowing the sensor to be used for FIRST Tech Challenge robots.
+
 ## Supported boards
 
 ### Tlera Corp
